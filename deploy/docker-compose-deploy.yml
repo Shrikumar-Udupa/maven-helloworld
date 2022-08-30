@@ -1,0 +1,5 @@
+version: '3'
+services:
+  maven:
+    image: "shrikumarudupa/$IMAGE:$BUILD_TAG"
+    container_name: maven-helloworld

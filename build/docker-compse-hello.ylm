@@ -1,0 +1,7 @@
+version: '3'
+services:
+  helloworld:
+    image: "maven-helloworld:$BUILD_TAG"
+    build: 
+      context: .
+      dockerfile: Dockerfile-Hello
