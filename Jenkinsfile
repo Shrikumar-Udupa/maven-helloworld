@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh ./build/java-maven.sh mvn -B -Dskiptest clean package  
-                   ./build/java-build.sh 
+                sh './build/java-maven.sh mvn -B -Dskiptest clean package'
+                sh './build/java-build.sh' 
             }
         }
         stage('Test') { 
